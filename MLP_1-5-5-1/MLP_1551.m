@@ -1,4 +1,4 @@
-function y_hat = KNN_verbessert(set, set_val)
+function y_hat = MLP_1551(set, set_val)
     
     Y = set(2:end, 2);
     X = set(1:end-1, 2);
