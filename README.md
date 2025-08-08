@@ -13,7 +13,7 @@ All models are built in MATLAB showcasing manual implementation of **forward pro
 - **Linear activation** for the output layer
 
 <p align="center">
-  <img src="MLP131.png" alt="MLP Architecture" width="450"/>
+  <img src="Illustration/MLP131.png" alt="MLP Architecture" width="500"/>
 </p>
 
 ---
@@ -52,8 +52,31 @@ All models are built in MATLAB showcasing manual implementation of **forward pro
 
 ---
 
+### Simulink Model — `KNN.slx`
+
+This repository contains a basic Simulink model **`KNN.slx`**, which implements a **Multi-Layer Perceptron (MLP)** for system identification.
+
+<p align="center">
+  <img src="Illustration/Simulink.png" alt="MLP Architecture" width="500"/>
+</p>
+
+- **Data Input (`data`)**: Supplies the input signals for both the real system and the MLP model.
+- **System Block**: Represents the real system to be identified.  
+  - Input: `p` (control signal)  
+  - Output: `y` (system response)
+- **Model Block (MLP)**: Neural network implementation that predicts the system output.  
+  - Inputs: `y` (system output) and `p` (control signal)  
+  - Output: `y_hat` (predicted system response)
+- **Comparison**: The predicted output `y_hat` is compared against the true output `y` to evaluate the identification accuracy.
+
+This configuration allows the MLP to be trained and validated directly within Simulink, enabling seamless integration of neural network modeling with simulation workflows.
+
 ## Usage
+
+MATLAB R2024b
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/your-repo-name.git
+   ```
+
