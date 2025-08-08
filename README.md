@@ -77,6 +77,6 @@ MATLAB R2024b
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/<USER>/MLP-Elman-Neural-Network-System-Identification.git
    ```
 
