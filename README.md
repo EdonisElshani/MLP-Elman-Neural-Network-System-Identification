@@ -1,7 +1,7 @@
 # Multi-Layer Perceptron (MLP) & Elman Neural Networks for System Identification
 
 This project implements **Multi-Layer Perceptron (MLP)** and **Elman Neural Networks** in MATLAB for basic system identification tasks.  
-All models are built in MATLAB showcasing manual implementation of **forward propagation**, **backpropagation**, and **weight updates**.
+All models are built in MATLAB showcasing manual implementation of **forward propagation**, **backpropagation**, and **weight updates**
 
 ---
 ## MLP 1-3-1
